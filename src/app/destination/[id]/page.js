@@ -7,13 +7,20 @@ import travelData from "@/data/travelData";
 
 const DestinationPage = (params) => {
   const [selectedTravel, setSelectedTravel] = useState(null);
+  // Booking detial
+
+  const [tripPricePerPerson, setTripPricePerPerson] = useState(1);
+  const [totalPersons, setTotalPersons] = useState(1);
+  const [totalDiscount, setTotalDiscount] = useState(0);
+  const totalPrice = tripPricePerPerson * totalPersons - totalDiscount;
 
   useEffect(() => {
-    const foundItem = travelData.find((item) => item.id === params.params.id);
+    const foundItem = travelData.find((item) => item.id === +params.params.id);
 
     if (foundItem) {
       setSelectedTravel(foundItem);
     }
+    console.log("this is", foundItem);
   }, []);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -21,29 +28,10 @@ const DestinationPage = (params) => {
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
-  const options = [
-    {
-      id: 1,
-      place: "Goa",
-      price: "INR 180",
-      dnt: "21 SEP  07:00 AM",
-    },
-    {
-      id: 2,
-      place: "Pune",
-      price: "INR 300",
-      dnt: "15 NOV  08:00 AM",
-    },
-    {
-      id: 3,
-      place: "Jaipur",
-      price: "INR 400",
-      dnt: "19 OCT  09:00 AM",
-    },
-  ];
   const handleSelect = (option) => {
     setSelectedOption(option);
     setIsOpen(false);
+    setTripPricePerPerson(Number(option.price.replace(/\D/g, "")));
   };
 
   const [travellers, setTravellers] = useState([
@@ -70,18 +58,10 @@ const DestinationPage = (params) => {
     setTravellers(updatedTravellers);
   };
 
-  // Booking detial
-
-  const tripPricePerPerson = 180;
-  const [totalPersons, setTotalPersons] = useState(1);
-  const [totalDiscount, setTotalDiscount] = useState(0);
-  const totalPrice = 180 * totalPersons - totalDiscount;
-
   useEffect(() => {
     setTotalPersons(travellers.length);
   }, [travellers]);
 
-  console.log("this is", selectedTravel);
   return (
     <>
       <Header />
@@ -233,8 +213,8 @@ const DestinationPage = (params) => {
         </div>
 
         <div className="flex -mt-36">
-          <div className="flex flex-col gap-4 sm:gap-7 justify-between w-full">
-            <div className="flex gap-10 px-5 w-fit rounded-lg items-center shadow-[rgba(61,_61,_61,_0.12)_0px_9px_16px]">
+          <div className="flex flex-col gap-4 sm:gap-7 justify-between w-full ">
+            <div className="flex gap-10 py-3 px-5 w-fit rounded-lg items-center shadow-[rgba(61,_61,_61,_0.12)_0px_9px_16px]">
               <div className="relative inline-block">
                 <button onClick={toggleDropdown} className="w-full text-sm">
                   {selectedOption ? (
@@ -253,13 +233,13 @@ const DestinationPage = (params) => {
                 </button>
 
                 {isOpen && (
-                  <div className="absolute bg-white z-30 mt-8 min-w-[20rem] rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[rgba(61,_61,_61,_0.14)_0px_9px_16px]">
+                  <div className="absolute bg-white z-30 mt-8 left-[-16px] min-w-[23rem] rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[rgba(61,_61,_61,_0.14)_0px_9px_16px]">
                     <div className="">
-                      {options.map((option) => (
+                      {selectedTravel.options.map((option) => (
                         <div
                           key={option.id}
                           onClick={() => handleSelect(option)}
-                          className="flex justify-between cursor-pointer px-4 py-2 text-[0.64rem] text-gray-700 hover:bg-gray-100 border-b-[1px] border-gray-200"
+                          className="flex justify-between cursor-pointer px-4 py-1 text-[0.64rem] text-gray-700 hover:bg-gray-100 border-b-[1px] border-gray-200"
                         >
                           <span className="flex-1">{option.place}</span>
                           <span className="flex-1">{option.price}</span>

@@ -34,6 +34,24 @@ const travelData = [
         price: "INR 400",
         dnt: "19 OCT  09:00 AM",
       },
+      {
+        id: 4,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 5,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 6,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
     ],
   },
   {
