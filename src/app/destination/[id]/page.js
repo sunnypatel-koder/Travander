@@ -116,16 +116,17 @@ const DestinationPage = (params) => {
 
             <div className="px-4 py-8 border-r-[1px] border-[#0000001e] flex flex-col gap-2">
               <h3 className="text-md font-semibold text-[#000000ed]">
-                Snow Forest
+                {selectedTravel?.title}
               </h3>
 
               <div className="flex justify-between text-[0.65rem] text-[#000000b9] font-medium">
-                <span>Start Date:2024-09-15</span>
-                <span className="font-semibold">By J. Dupont</span>
+                <span>Start Date:{selectedTravel?.startDate}</span>
+                <span className="font-semibold">
+                  By {selectedTravel?.guideName}
+                </span>
               </div>
-              <p className="text-[0.8rem] text-balance font-medium w-fit">
-                Experience Paris's charm with tours of the Eiffel Tower, Louvre,
-                and Montmartre.
+              <p className="text-[0.8rem] text-balance font-medium w-fit line-clamp-2">
+                {selectedTravel?.description}
               </p>
               <h4 className="text-sm text-[#1a7fc7] pt-4">
                 Best Price Gaurantee
@@ -134,7 +135,10 @@ const DestinationPage = (params) => {
 
             <div className="max-w-72 min-w-44 grid place-content-center">
               <h2 className="text-[0.9rem] text-[#2c2c2ce3] font-medium">
-                4 Days 3 Nights
+                {selectedTravel?.duration
+                  .replace(/(\d+)D/, "$1 days")
+                  .replace(/(\d+)N/, "$1 nights")
+                  .replace("/", " - ")}
               </h2>
             </div>
           </div>

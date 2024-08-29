@@ -2,11 +2,11 @@ const travelData = [
   {
     id: 1,
     destinationName: "Paris",
-    title: "Romantic Getaway in Paris is the best place ever",
+    title: "Getaway in Paris is the best ever",
     startDate: "2024-09-15",
     guideName: "Jean Dupont",
     duration: "4D/3N",
-    pricePerPerson: "189€",
+    pricePerPerson: "189 INR",
     description:
       "Discover the charm and romance of Paris with guided tours of the Eiffel Tower, Louvre, and Montmartre.",
     highlights: [
@@ -61,7 +61,7 @@ const travelData = [
     startDate: "2024-10-10",
     guideName: "Yuki Tanaka",
     duration: "7D/6N",
-    pricePerPerson: "699€",
+    pricePerPerson: "699 INR",
     description:
       "Immerse yourself in the vibrant culture of Tokyo with visits to ancient temples, bustling markets, and modern attractions. Enjoy guided tours and authentic Japanese cuisine.",
     highlights: [
@@ -70,6 +70,44 @@ const travelData = [
       "Tour the Imperial Palace",
       "Enjoy traditional Japanese tea ceremony",
     ],
+    options: [
+      {
+        id: 1,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 2,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 3,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+      {
+        id: 4,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 5,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 6,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+    ],
   },
   {
     id: 3,
@@ -77,8 +115,8 @@ const travelData = [
     title: "City Lights Experience in New York",
     startDate: "2024-11-05",
     guideName: "Emily Carter",
-    duration: "5D/4N",
-    pricePerPerson: "299€",
+    duration: "8D/7N",
+    pricePerPerson: "299 INR",
     description:
       "Experience the energy and excitement of New York City with guided tours of Times Square, Central Park, and Broadway shows. Discover the best of NYC’s vibrant culture.",
     highlights: [
@@ -86,6 +124,44 @@ const travelData = [
       "Explore Central Park",
       "See a Broadway show",
       "Tour the Metropolitan Museum of Art",
+    ],
+    options: [
+      {
+        id: 1,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 2,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 3,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+      {
+        id: 4,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 5,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 6,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
     ],
   },
   {
@@ -94,8 +170,8 @@ const travelData = [
     title: "City Lights Experience in New York",
     startDate: "2024-11-05",
     guideName: "Emily Carter",
-    duration: "5D/4N",
-    pricePerPerson: "299€",
+    duration: "10D/9N",
+    pricePerPerson: "299 INR",
     description:
       "Experience the energy and excitement of New York City with guided tours of Times Square, Central Park, and Broadway shows. Discover the best of NYC’s vibrant culture.",
     highlights: [
@@ -104,15 +180,53 @@ const travelData = [
       "See a Broadway show",
       "Tour the Metropolitan Museum of Art",
     ],
+    options: [
+      {
+        id: 1,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 2,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 3,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+      {
+        id: 4,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 5,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 6,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+    ],
   },
   {
     id: 5,
     destinationName: "New York",
-    title: "City Lights Experience in New York",
+    title: "City Lights Experience in NK",
     startDate: "2024-11-05",
     guideName: "Emily Carter",
     duration: "5D/4N",
-    pricePerPerson: "299€",
+    pricePerPerson: "299 INR",
     description:
       "Experience the energy and excitement of New York City with guided tours of Times Square, Central Park, and Broadway shows. Discover the best of NYC’s vibrant culture.",
     highlights: [
@@ -120,6 +234,44 @@ const travelData = [
       "Explore Central Park",
       "See a Broadway show",
       "Tour the Metropolitan Museum of Art",
+    ],
+    options: [
+      {
+        id: 1,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 2,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 3,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+      {
+        id: 4,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 5,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 6,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
     ],
   },
   {
@@ -129,7 +281,7 @@ const travelData = [
     startDate: "2024-11-05",
     guideName: "Emily Carter",
     duration: "5D/4N",
-    pricePerPerson: "299€",
+    pricePerPerson: "299 INR",
     description:
       "Experience the energy and excitement of New York City with guided tours of Times Square, Central Park, and Broadway shows. Discover the best of NYC’s vibrant culture.",
     highlights: [
@@ -137,6 +289,44 @@ const travelData = [
       "Explore Central Park",
       "See a Broadway show",
       "Tour the Metropolitan Museum of Art",
+    ],
+    options: [
+      {
+        id: 1,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 2,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 3,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+      {
+        id: 4,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 5,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 6,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
     ],
   },
   {
@@ -146,7 +336,7 @@ const travelData = [
     startDate: "2024-11-05",
     guideName: "Emily Carter",
     duration: "5D/4N",
-    pricePerPerson: "299€",
+    pricePerPerson: "299 INR",
     description:
       "Experience the energy and excitement of New York City with guided tours of Times Square, Central Park, and Broadway shows. Discover the best of NYC’s vibrant culture.",
     highlights: [
@@ -154,6 +344,44 @@ const travelData = [
       "Explore Central Park",
       "See a Broadway show",
       "Tour the Metropolitan Museum of Art",
+    ],
+    options: [
+      {
+        id: 1,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 2,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 3,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+      {
+        id: 4,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 5,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 6,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
     ],
   },
   {
@@ -163,7 +391,7 @@ const travelData = [
     startDate: "2024-11-05",
     guideName: "Emily Carter",
     duration: "5D/4N",
-    pricePerPerson: "299€",
+    pricePerPerson: "299 INR",
     description:
       "Experience the energy and excitement of New York City with guided tours of Times Square, Central Park, and Broadway shows. Discover the best of NYC’s vibrant culture.",
     highlights: [
@@ -171,6 +399,44 @@ const travelData = [
       "Explore Central Park",
       "See a Broadway show",
       "Tour the Metropolitan Museum of Art",
+    ],
+    options: [
+      {
+        id: 1,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 2,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 3,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
+      {
+        id: 4,
+        place: "Goa",
+        price: "INR 180",
+        dnt: "21 SEP  07:00 AM",
+      },
+      {
+        id: 5,
+        place: "Pune",
+        price: "INR 300",
+        dnt: "15 NOV  08:00 AM",
+      },
+      {
+        id: 6,
+        place: "Jaipur",
+        price: "INR 400",
+        dnt: "19 OCT  09:00 AM",
+      },
     ],
   },
 ];
